@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Yvan Chester R. Tadle, 2019-02596</title>
+    <script type="text/javascript" src="Tadle05.js">
+    </script>
+</head>
+
+<body>
+    <div>
+        This program asks the user to input the following information of a Filipino citizen:<br>
+        1. Annual Income<br>
+        2. 13th month pay<br>
+        3. Total Annual mandatory deductions (e.g. SSS, GSIS, Pag-ibig, Philhealth)<br>
+        4. Number of dependents (e.g. Old parents, Children below 21 yrs old)<br><br>
+        Then, the program computes the following:<br><br>
+        1. Gross income = Annual Income + 13th month pay<br>
+        2. Total exemptions for dependents. Take note that if there are 5 dependents, then only 4 can
+        avail the P50T exemptions per dependent.<br>
+        &nbsp &nbsp &nbsp &nbsp • Total exemptions = 50000 * n dependents, if n <=4 • Total exemptions=200000, if dependents> 4<br>
+            3. Total deductions = mandatory exemptions + personal exemptions + total exemptions for
+            dependents. Personal exemptions per tax payer = 250,000.<br>
+            4. Taxable Income = Gross income – Total deductions<br>
+            5. Payable Tax
+    </div><br><br>
+    <div>
+        Name: Yvan Chester Tadle, 2019-02596
+    </div><br>
+    <p> Input the Annual Income: </p> <input type="number" placeholder="Value 1" id="AnnualIncome">
+    <p> Input 13th Month Pay amount: </p> <input type="number" placeholder="Value 1" id="extraPay">
+    <p> Input Total Annual mandatory deductions (e.g. SSS, GSIS, Pag-ibig, Philhealth): </p> <input type="number" placeholder="Value 1" id="Deductions">
+    <p> Input the number of dependents (e.g. Old parents, Children below 21 yrs old): </p> <input type="number" placeholder="Value 1" id="Dependednts"><br><br>
+    <button type="button" onclick="input()">Submit</button>
+</body>
+
+</html>
